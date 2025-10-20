@@ -4,13 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-/**
- * Entidade de exemplo representando uma tarefa (Task) no sistema. Cada
- * tarefa possui um id, um título e uma descrição. A entidade é usada
- * para demonstrar operações CRUD protegidas por autenticação e
- * autorização. A anotação @Entity indica que a classe será mapeada
- * para uma tabela no banco de dados H2.
- */
+
 @Entity
 @Table(name = "tasks")
 public class Task {
