@@ -6,12 +6,7 @@ import jakarta.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Entidade que representa o usuário do sistema. Os usuários possuem
- * um identificador, nome de usuário, senha (armazenada de forma
- * criptografada) e um conjunto de roles que definem permissões. A
- * anotação @Entity marca a classe para ser mapeada pelo JPA/Hibernate.
- */
+
 @Entity
 @Table(name = "users")
 public class User {
