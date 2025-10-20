@@ -9,13 +9,7 @@ import org.springframework.stereotype.Component;
 import java.security.Key;
 import java.util.Date;
 
-/**
- * Classe utilitária responsável pela geração e validação de tokens JWT.
- * Usa a biblioteca jjwt para manipular os tokens. Em um projeto real,
- * as propriedades secret e expiration poderiam vir de
- * application.properties, mas aqui fornecemos valores padrão para fins
- * didáticos.
- */
+
 @Component
 public class JwtUtils {
     // Segredo utilizado para assinar o token. Em produção utilize uma
