@@ -19,13 +19,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * Filtro que intercepta cada requisição e extrai o token JWT do
- * cabeçalho Authorization. Se o token for válido, define um objeto
- * Authentication no contexto de segurança contendo o usuário e suas
- * autoridades. Extende OncePerRequestFilter para garantir que cada
- * requisição seja filtrada uma única vez.
- */
+
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
