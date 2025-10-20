@@ -2,10 +2,7 @@ package com.example.soaauthapp.dto;
 
 import jakarta.validation.constraints.NotBlank;
 
-/**
- * DTO para autenticação. Contém nome de usuário e senha. Será usado
- * para criar um UsernamePasswordAuthenticationToken no serviço.
- */
+
 public class LoginRequest {
     @NotBlank
     private String username;
