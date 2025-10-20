@@ -3,11 +3,7 @@ package com.example.soaauthapp.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-/**
- * DTO para registro de usuário. Recebe o nome de usuário e senha
- * enviados pelo cliente. A anotação @NotBlank garante que os campos
- * obrigatórios foram preenchidos.
- */
+
 public class SignupRequest {
     @NotBlank
     @Size(min = 3, max = 50)
