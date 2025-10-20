@@ -1,8 +1,6 @@
 # SOA Auth App – Autenticação JWT com Spring Boot
 
-Este projeto é uma aplicação simples desenvolvida para a disciplina de **Arquitetura Orientada a Serviços (SOA)**. O objetivo é demonstrar boas práticas de desenvolvimento orientado a objetos, com uma **autenticação e autorização seguras** por meio de JWT, seguindo princípios SOLID e uma clara separação de responsabilidades.
 
-O código foi escrito de forma humanizada, como seria entregue por um estudante, mas busca contemplar todos os requisitos exigidos no enunciado.
 
 ## Funcionalidades
 
@@ -33,36 +31,5 @@ O diagrama abaixo ilustra os principais componentes da aplicação:
 - **SpringDoc OpenAPI** para documentação
 - **JUnit 5** e **Mockito** para testes
 
-## Como Executar
 
-1. **Pré-requisitos:** Java 17 e Maven instalados.
-2. Navegue até a pasta `SoaAuthApp` e execute:
 
-   ```bash
-   mvn spring-boot:run
-   ```
-
-3. A aplicação será iniciada em `http://localhost:8080`. Acesse `http://localhost:8080/swagger-ui.html` para visualizar e testar os endpoints.
-
-4. Para visualizar o console do H2 (útil para inspeção das tabelas em memória), acesse `http://localhost:8080/h2-console` e use o JDBC URL `jdbc:h2:mem:soa_db`.
-
-## Como Rodar os Testes
-
-Basta executar:
-
-```bash
-mvn test
-```
-
-O Maven fará o download das dependências de teste, executará os testes unitários e de integração, e mostrará um relatório com a cobertura básica. Os testes automatizados demonstram como um aluno pode validar a lógica de negócios e a segurança da API.
-
-## Notas e Referências
-
-- O uso de **BCrypt** para codificar senhas é recomendado pela própria documentação do Spring Security【828170898051826†L565-L569】.
-- A aplicação adota política de criação de sessão `STATELESS`, eliminando o armazenamento de sessão no servidor e favorecendo a utilização de tokens JWT【828170898051826†L571-L577】.
-- Para geração automática da documentação, foi utilizado **SpringDoc**, conforme a biblioteca descrita como forma de expor APIs REST de maneira padronizada【136108518677892†L101-L112】.
-- O segredo do JWT e demais configurações sensíveis encontram‐se em `application.properties`. Em um ambiente real, recomenda‐se movê‐los para variáveis de ambiente ou serviços de configuração externa.
-
----
-
-Projeto preparado com fins acadêmicos. Ajuste, estenda e explore de acordo com suas necessidades e aprendizado!
