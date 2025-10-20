@@ -14,14 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-/**
- * Configuração de segurança da aplicação. Define políticas
- * estateless, endpoints públicos e o filtro de autenticação JWT. O
- * PasswordEncoder utiliza BCrypt, conforme recomendado para
- * armazenar senhas de forma segura【828170898051826†L565-L569】. A política de
- * criação de sessão é STATELESS【828170898051826†L571-L577】, garantindo
- * que o servidor não armazenará sessão do usuário.
- */
+
 @Configuration
 @EnableMethodSecurity
 public class SecurityConfig {
